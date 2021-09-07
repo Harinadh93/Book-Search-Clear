@@ -45,6 +45,7 @@ function displaySearchResults(searchResults) {
 }
 
 function searchBook(event) {
+    searchresultsEl.textContent = ""
     if (event.key === "Enter") {
         let url = "https://apis.ccbp.in/book-store?title=" + searchInputEl.value + "&maxResults=" + selectDisplayCountEl.value;
         let options = {
